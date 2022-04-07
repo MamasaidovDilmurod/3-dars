@@ -1,0 +1,447 @@
+html {
+       box-sizing: border-box;
+       height: 100%;
+}
+
+*,
+*::before,
+*::after {
+       box-sizing: inherit;
+
+}
+
+body {
+       padding: 0;
+       margin: 0;
+       font-family: "Barlow-400", "Arial", sans-serif;
+       background-color: #fff;
+       color: #fefcf7;
+       font-size: 16px;
+       line-height: 26px;
+}
+
+img {
+       max-width: 100%;
+       height: auto;
+}
+
+.visually-hidden {
+       position: absolute;
+       width: 1px;
+       height: 1px;
+       margin: -1px;
+       border: 0;
+       padding: 0;
+       clip: rect(0 0 0 0);
+       overflow: hidden;
+}
+
+@font-face {
+       font-family: "Barlow-400";
+       font-style: normal;
+       src: url(../fonts/Barlow-Regular.ttf);
+
+}
+
+@font-face {
+       font-family: "Barlow-700";
+       font-style: normal;
+       src: url(../fonts/Barlow-Bold.ttf);
+}
+
+@font-face {
+       font-family: 'Fraunches';
+       font-style: normal;
+       src: url(../fonts/Fraunces-Black.ttf);
+}
+
+.container {
+       max-width: 1086px;
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+.general-link {
+       text-decoration: none;
+       font-family: "Fraunches";
+       font-size: 18px;
+       line-height: 25px;
+       background-color: #0e8784;
+       border-radius: 6px;
+       margin: 0;
+       padding: 15px 31px 16px 31px;
+       color: #fefcf7;
+}
+
+/*site-header*/
+.background-container {
+       max-width: 1280px;
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+.header__container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 44px;
+}
+
+.header__logo-link {
+       display: block;
+       margin: 0;
+       padding: 0;
+}
+
+.header__nav {
+       font-family: "Barlow-700";
+       font-size: 12px;
+       line-height: 15px;
+
+}
+
+.header__nav-link {
+       text-decoration: none;
+       text-transform: uppercase;
+       color: #83888f;
+       margin: 0;
+       padding: 0;
+       vertical-align: center;
+}
+
+.header__nav-link:nth-child(1) {
+       margin-right: 33px;
+}
+
+.header__nav-link:nth-child(2) {
+       margin-right: 32px;
+}
+
+/*site-main*/
+/*section-about-coffee*/
+.main__section-about-coffee {
+       margin-top: 45px;
+       border-radius: 10px;
+}
+
+.main__section-about-coffee-text {
+       padding-top: 117px;
+       padding-bottom: 116px;
+}
+
+.main__section-about-coffee-heading {
+       margin: 0;
+       padding: 0;
+       font-family: "Fraunces";
+       font-weight: 900;
+       font-size: 72px;
+       line-height: 72px;
+       width: 493px;
+       margin-bottom: 32px;
+}
+
+.main__section-about-coffee-desc {
+       font-family: "Barlow-400";
+       margin: 0;
+       padding: 0;
+       opacity: 0.8;
+       width: 445px;
+       margin-bottom: 56px;
+}
+
+.main__section-about-coffee {
+       background-image: url(../img/background-image-coffe.png);
+       background-repeat: repeat;
+       background-size: cover;
+
+}
+
+/*section-our-collection*/
+.section-our-collection {
+       position: relative;
+       margin-top: 350px;
+
+}
+
+.section-our-collection__heading {
+
+       position: absolute;
+       bottom: 360px;
+       font-family: 'Fraunces';
+       font-size: 150px;
+       z-index: -1;
+       line-height: 115px;
+       text-align: center;
+       background-color: #83888F;
+       background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+
+       margin: 0;
+       padding: 0;
+}
+
+.section-our-collection__list {
+       display: flex;
+       margin: 0;
+       padding: 0;
+       margin-left: -30px;
+}
+
+.section-our-collection__item {
+       text-align: center;
+       max-width: 255px;
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       margin-left: 30px;
+}
+
+.section-our-collection__item-img {
+       margin-bottom: 72px;
+}
+
+.section-our-collection__item-heading {
+       font-family: 'Fraunces';
+       font-size: 24px;
+       line-height: 32px;
+       color: #333D4B;
+       text-align: center;
+       margin: 0;
+       padding: 0;
+       margin-bottom: 24px;
+}
+
+.section-our-collection__item-desc {
+       font-family: "Barlow-400";
+       color: #333D4B;
+       margin: 0;
+       padding: 0;
+
+}
+
+/*section-choose*/
+.section-choose {
+       margin-top: 200px;
+       background-color: #2C343E;
+       border-radius: 10px;
+       position: relative;
+}
+
+.section-choose__heading {
+       padding-top: 100px;
+       font-family: "Fraunces";
+       font-weight: 900;
+       font-size: 40px;
+       line-height: 48px;
+       text-align: center;
+       color: #FEFCF7;
+       margin: 0;
+       margin-bottom: 32px;
+}
+
+.section-choose__desc {
+       font-family: "Barlow-400";
+       opacity: 0.8;
+       padding-bottom: 317px;
+       width: 540px;
+       margin: 0;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+}
+
+.section-choose__list {
+       position: absolute;
+       display: flex;
+       margin: 0;
+       padding: 0;
+       margin-left: -30px;
+       bottom: -151px;
+}
+
+.section-choose__item {
+       background-color: #0E8784;
+       border-radius: 8px;
+       list-style-type: none;
+       width: 350px;
+       margin-left: 30px;
+       text-align: center;
+}
+
+.section-choose__picture {
+       margin-bottom: 56px;
+       padding-top: 72px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+.section-choose-item__heading {
+       margin: 0;
+       padding: 0;
+       font-family: "Fraunces";
+       font-size: 24px;
+       line-height: 32px;
+       text-align: center;
+       margin-bottom: 24px;
+}
+
+.section-choose-item__desc {
+       width: 255px;
+       text-align: center;
+       font-family: "Barlow-400";
+       padding-bottom: 48px;
+       margin: 0;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+/**/
+.section-works__heading {
+       font-family: 'Fraunces';
+       font-size: 24px;
+       line-height: 32px;
+       color: #83888F;
+       margin-top: 281px;
+       margin-bottom: 80px;
+}
+
+.section-circleand-line {
+       display: flex;
+       z-index: 1;
+       width: 760px;
+       justify-content: space-between;
+       position: relative;
+       top: 18px;
+}
+
+.section-circle {
+       width: 31px;
+       height: 34px;
+       border-radius: 50%;
+       background-color: #fff;
+       border: 1px solid rgba(14, 135, 132, 1);
+
+}
+
+.section-line {
+
+       position: absolute;
+       vertical-align: center;
+       width: 760px;
+       height: 0;
+       border: 2px solid #FDD6BA;
+}
+
+.section-work__list {
+       display: flex;
+       margin: 0;
+       padding: 0;
+       list-style-type: none;
+       margin-right: -95px;
+       margin-bottom: 64px;
+
+}
+
+.section-work__item {
+       margin: 0;
+       margin-right: 95px;
+
+}
+
+.section-work__password {
+       font-family: "Fraunces";
+       font-style: bold;
+       font-size: 72px;
+       line-height: 72px;
+       color: #FDD6BA;
+       margin-bottom: 38px;
+}
+
+.section-work__heading {
+       width: 255px;
+       font-family: 'Fraunces';
+       font-size: 32px;
+       line-height: 36px;
+       color: #333D4B;
+       margin: 0;
+       margin-bottom: 42px;
+
+}
+
+.section-work__desc {
+       font-family: "Barlow-400";
+       max-width: 285px;
+       width: 100%;
+       margin: 0;
+       color: #333D4B;
+}
+
+/*footer*/
+.footer__logo {
+       display: block;
+}
+
+.section {
+       background-color: #2C343E;
+       margin-top: 200px;
+
+}
+
+.site-footer {
+       padding-bottom: 88px;
+
+}
+
+.footer__container {
+       display: flex;
+
+       padding-top: 48px;
+       padding-bottom: 48px;
+
+       align-items: center;
+}
+
+.footer__nav {
+
+       align-items: center;
+       margin-left: 103px;
+}
+
+.footer__nav-link:nth-child(1) {
+       color: #83888F;
+
+}
+
+.footer__nav-link:nth-child(2) {
+       color: #83888F;
+}
+
+.footer__nav-link:nth-child(3) {
+       color: #FEFCF7;
+}
+
+.footer__list {
+       display: flex;
+       margin: 0;
+       padding: 0;
+       margin-left: -19px;
+       list-style-type: none;
+       margin-left: auto;
+       align-items: center;
+}
+
+.footer__item {
+       margin: 0;
+       margin-left: 19px;
+
+}
+
+.footer__item-link {
+       margin: 0;
+       text-decoration: none;
+       margin: 0;
+}
