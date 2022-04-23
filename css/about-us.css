@@ -13,18 +13,18 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
-  font-family: 'Barlow';
+  font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
   background-color: #fff;
-  color: #FEFCF7;
-  ;
+  color: #fefcf7;
   font-size: 16px;
   line-height: 26px;
 }
 
 img {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -49,8 +49,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 /*site-header*/
 
@@ -106,8 +104,6 @@ img {
   display: none;
 }
 
-
-
 /*Section-About-Us*/
 
 .About-Us {
@@ -121,12 +117,12 @@ img {
 }
 
 .About-Us__heading {
-  font-family: 'Fraunces';
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
-  color: #FEFCF7;
+  color: #fefcf7;
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
@@ -146,7 +142,9 @@ img {
   padding-left: 85px;
   display: flex;
 }
-
+.Our-commitment__picture {
+  flex-shrink: 0;
+}
 .Our-commitment__img {
   border-radius: 8px;
 }
@@ -159,19 +157,19 @@ img {
 }
 
 .Our-commitment__texts-heading {
-  font-family: 'Fraunces';
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
-  color: #333D4B;
+  color: #333d4b;
   margin: 0;
   padding: 0;
   margin-bottom: 32px;
 }
 
 .Our-commitment__texts-desc {
-  color: #333D4B;
+  color: #333d4b;
   opacity: 0.8;
   margin: 0;
   padding: 0;
@@ -180,7 +178,7 @@ img {
 /*Section-Uncompromising-quality*/
 .Uncompromising-quality {
   position: relative;
-  background-color: #2C343E;
+  background-color: #2c343e;
   border-radius: 10px;
   padding-top: 88px;
   padding-bottom: 176px;
@@ -189,7 +187,7 @@ img {
 }
 
 .Uncompromising-quality__texts-heading {
-  font-family: 'Fraunces';
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
@@ -223,12 +221,12 @@ img {
 }
 
 .Our-headquarters__heading {
-  font-family: 'Fraunces';
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
-  color: #83888F;
+  color: #83888f;
   margin: 0;
   padding: 0;
   margin-bottom: 72px;
@@ -240,7 +238,6 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .Our-headquarters__item {
@@ -263,12 +260,12 @@ img {
 }
 
 .Our-headquarters__item-heading {
-  font-family: 'Fraunces';
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
   line-height: 36px;
-  color: #333D4B;
+  color: #333d4b;
   margin: 0;
   padding: 0;
 }
@@ -283,7 +280,7 @@ img {
 .Our-headquarters__item-desc-list-item {
   margin: 0;
   padding: 0;
-  color: #333D4B;
+  color: #333d4b;
 }
 
 /*Site-footer*/
@@ -345,7 +342,6 @@ img {
   text-decoration: none;
   margin: 0;
 }
-
 
 @media only screen and (max-width: 1310px) {
   .container {
@@ -418,7 +414,6 @@ img {
     margin: 0;
     margin-top: 8px;
     margin-left: 69px;
-
   }
 
   .Our-commitment__texts-heading {
@@ -438,7 +433,6 @@ img {
     padding: 0;
     margin: 0;
     margin-top: 304px;
-
   }
 
   .Uncompromising-quality__texts {
@@ -502,7 +496,6 @@ img {
   .Our-headquarters__item-desc-list {
     margin: 0;
     margin-top: 21px;
-
   }
 
   .Our-headquarters__item-desc-list-item {
@@ -553,7 +546,6 @@ img {
     font-size: 15px;
     text-align: center;
   }
-
 }
 
 @media only screen and (max-width: 545px) {
@@ -575,8 +567,6 @@ img {
   .header__nav-item:nth-child(3) {
     margin-left: 5px;
   }
-
-
 }
 
 @media only screen and (max-width: 490px) {
@@ -604,10 +594,6 @@ img {
   .Our-commitment__img {
     margin-right: -50px;
   }
-
-
-
-
 }
 
 /*TODO phone*/
@@ -656,7 +642,15 @@ img {
     margin: 0;
     margin-top: 48px;
   }
-
+  .Our-commitment__picture {
+    width: 327px;
+    height: 400px;
+  }
+  .Our-commitment__img {
+    width: 327px;
+    height: 400px;
+    margin: 0;
+  }
   .Our-commitment__texts-heading {
     font-size: 32px;
     line-height: 48px;
@@ -678,13 +672,15 @@ img {
 
   .Uncompromising-quality__img {
     z-index: 1;
-    margin-left: 50px;
+    margin: 0;
+    margin-left: 48px;
+    margin-right: 24px;
   }
 
   .Uncompromising-quality__texts {
     padding-top: 142px;
     padding-left: 24px;
-    padding-right: 24px;
+    padding-right: 0px;
     padding-bottom: 61px;
   }
 
@@ -789,7 +785,6 @@ img {
   }
 
   .footer__list {
-
     margin-right: -24px;
     margin: 0 auto;
     margin-top: 48px;
@@ -803,6 +798,6 @@ img {
   .footer__item-link {
     margin: 0;
     text-decoration: none;
-    margin: 0
+    margin: 0;
   }
 }
